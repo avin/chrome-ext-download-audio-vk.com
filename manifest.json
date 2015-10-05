@@ -1,0 +1,40 @@
+{
+    "background": {
+        "scripts": [
+            "jquery-2.1.4.min.js",
+            "lodash.min.js",
+            "extension.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "css": [
+                "extension.css"
+            ],
+            "js": [
+                "jquery-2.1.4.min.js",
+                "lodash.min.js",
+                "content.js"
+            ],
+            "matches": [
+                "http://vk.com/*",
+                "https://vk.com/*",
+                "http://vkontakte.ru/*",
+                "https://vkontakte.ru/*",
+                "http://*.vk.me/*",
+                "https://*.vk.me/*"
+            ]
+        }
+    ],
+    "description": "Cкачай музыку на VK.com",
+    "icons": {
+        "48": "icon.png"
+    },    
+    "manifest_version": 2,
+    "name": "Cкачай музыку на VK.com",
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "version": "0.3",
+    "permissions": [
+        "downloads"
+    ]
+}
